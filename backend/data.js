@@ -17,7 +17,6 @@ const data ={
     ],
     products : [
         {
-            _id: '1',
             name : 'Nike Slim Shirt',
             category: 'Shirts',
             image: '/images/p1.jpg',
@@ -29,7 +28,6 @@ const data ={
             description: 'high quality product',
         },
         {
-            _id: '2',
             name : 'Adidas Slim Shirt',
             category: 'Shirts',
             image: '/images/p1.jpg',
@@ -41,7 +39,6 @@ const data ={
             description: 'high quality product',
         },
         {
-            _id: '3',
             name : 'Park Slim Shirt',
             category: 'Tee',
             image: '/images/p1.jpg',
@@ -53,7 +50,6 @@ const data ={
             description: 'high quality product',
         },
         {
-            _id: '4',
             name : 'T-Shirt',
             category: 'T-Shirts',
             image: '/images/p1.jpg',
@@ -65,7 +61,6 @@ const data ={
             description: 'high quality product',
         },
         {
-            _id: '5',
             name : 'Nike Shoes',
             category: 'Shoes',
             image: '/images/p1.jpg',
@@ -77,7 +72,6 @@ const data ={
             description: 'high quality product',
         },
         {
-            _id: '6',
             name : 'Adidas Bag',
             category: 'Bag',
             image: '/images/p1.jpg',
