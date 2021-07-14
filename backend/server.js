@@ -6,6 +6,8 @@ import productRouter from './routers/productRouter.js';
 dotenv.config();
 
 const app = express()
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 mongoose.connect('mongodb+srv://peak:the123@cluster0.fkaoh.mongodb.net/amazona?retryWrites=true&w=majority',
     {
         useNewUrlParser: true,
