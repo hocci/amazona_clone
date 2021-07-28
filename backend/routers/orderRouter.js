@@ -18,8 +18,23 @@ orderRouter.post("/", isAuth, async (req, res) => {
       totalPrice: req.body.totalPrice,
       user: req.user._id,
     });
-    const createOrder = await order.save();
-    res.status(201).send({ message: "New Order Created", Order: createOrder });
+    await order
+      .save()
+      .then((data) => {
+        res.status(201).send({ message: "New Order Created", Order: data });
+      })
+      .catch((error) => {
+        res.status(400).send({ message: error.message });
+      });
+  }
+});
+
+orderRouter.get("/:id", isAuth, async (req, res) => {
+  const order = await Order.findById(req.params.id);
+  if (order) {
+    res.send(order);
+  } else {
+    res.status(404).send({ message: "Order Not Found" });
   }
 });
 
